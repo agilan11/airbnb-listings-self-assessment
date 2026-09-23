@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SF Airbnb Listings</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="py-4">
+      <h1>SF Airbnb Listings</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Listings</h2>
+        <p id="listing-count" class="text-muted">
+        Showing 50 listings
+        </p>
+
+        <div class="mb-4">
+            <label for="sort-price" class="form-label">
+                Sort by price
+            </label>
+
+            <select id="sort-price" class="form-select">
+                <option value="default">Default</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+            </select>
+        </div>
+
+        <div id="listings" class="row g-4">
+          
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>
